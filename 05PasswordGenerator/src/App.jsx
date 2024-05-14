@@ -35,7 +35,9 @@ function App() {
   },[length,numberAllowed,charAllowed,passwordGenerator]);
 
   const copyPasswordToClipboard=useCallback(()=>{
+    //Use of passwordRef
     passwordRef.current?.select();
+    passwordRef.current?.setSelectionRange(0,10);
     window.navigator.clipboard.writeText(password);
   },[password]);
 
@@ -55,8 +57,8 @@ function App() {
           />
           <button
           onClick={copyPasswordToClipboard}
-          className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
-          >copy</button>
+          className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0  transform transition-transform duration-300 ease-in-out hover:bg-blue-600 active:bg-blue-700 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-300'
+          >COPY</button>
           
       </div>
       <div className='flex text-sm gap-x-2'>
@@ -99,3 +101,10 @@ function App() {
 }
 
 export default App
+
+
+//Add More Features
+//01)Copy BTN more UI friendly
+//02)Write a blog on four hooks used in this project
+//03)Enhance UI
+//04)Send this password to the email provided from backend(optional)
