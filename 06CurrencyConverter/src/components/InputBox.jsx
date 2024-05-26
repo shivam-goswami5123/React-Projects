@@ -41,6 +41,7 @@ function InputBox({
                     }}
                     disabled={currencyDisable}
                 >
+                    //LOOPING IN ARRAYS INVOLVE KEYS
                     {currencyOptions.map((currency) => (
                         <option key={currency} value={currency}>
                             {currency}
