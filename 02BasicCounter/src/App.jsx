@@ -1,24 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
-  //Injection of a variable "Evaluated Expression" in return block in frontend
-  //useState(<defaultValue> e.g:any number , function , object , string , array etc...)
-  //it returns a array [<variable> , <function>] : this function will update the variable
+ 
   let [counter,setCounter]=useState(15);
 
   function incrementByOne(){
-    if(counter+1<=20){
       setCounter(counter+1);
-    }
+      setCounter(counter+1);
+      setCounter(counter+1);
+      setCounter(counter+1);
   };
 
   function decrementByOne(){
-    if(counter-1>=0){
       setCounter(counter-1);
-    }
   };
 
   return (
