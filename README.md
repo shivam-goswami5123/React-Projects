@@ -20,6 +20,7 @@ This repository is a collection of various projects built using React. Each proj
 3. **Project Three** - Password Generator
 4. **Project Four** - Currency Converter
 5. **Project Five** - React Router
+   
    (still couting...)
 
 ## Installation
@@ -28,9 +29,9 @@ To get started with any of these projects, follow these steps:
 
    ```bash
    git clone https://github.com/yourusername/react-projects.git
-   cd react-projects
+   cd React-Projects
    npm install
    cd project-name
    npm run dev
    ```
-Replace yourusername and project-name with correct names
+Replace 'yourusername' and 'project-name' with correct names
